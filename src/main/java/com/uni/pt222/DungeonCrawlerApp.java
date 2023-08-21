@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class DungeonCrawlerApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("game.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Home_screen.fxml"));
         AnchorPane root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);

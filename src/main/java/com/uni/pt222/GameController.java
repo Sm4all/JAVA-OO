@@ -4,18 +4,28 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextInputDialog;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class GameController {
+
     @FXML
-    private Label locationLabel;
+    private ResourceBundle resources;
+
     @FXML
-    private Button northButton;
+    private URL location;
+
     @FXML
-    private Button southButton;
+    private Button btnAbout;
+
     @FXML
-    private Button eastButton;
+    private Button btnHowToPlay;
+
     @FXML
-    private Button westButton;
+    private Button btnStartGame;
+
+    @FXML
+    private Label lblTitleText;
 
     private String characterName;
     private Game game; // Initialize this with your game logic
@@ -32,14 +42,14 @@ public class GameController {
         });
 
         // Set up button handlers
-        northButton.setOnAction(event -> move("North"));
-        southButton.setOnAction(event -> move("South"));
-        eastButton.setOnAction(event -> move("East"));
-        westButton.setOnAction(event -> move("West"));
+        //northButton.setOnAction(event -> move("North"));
+       // southButton.setOnAction(event -> move("South"));
+        //eastButton.setOnAction(event -> move("East"));
+        //westButton.setOnAction(event -> move("West"));
     }
 
     private void updateLocationDescription() {
-        locationLabel.setText(game.getCurrentLocationDescription());
+        //locationLabel.setText(game.getCurrentLocationDescription());
         if (game.isGameOver()) {
             // Display game outcome using character name
             // You can show a dialog or update the label here
