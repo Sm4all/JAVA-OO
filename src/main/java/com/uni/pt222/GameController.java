@@ -27,23 +27,40 @@ public class GameController {
     @FXML
     private Label lblTitleText;
 
+    @FXML
+    private Label lblyourname;
+
+    @FXML
+    private Label lblusername;
+
+    @FXML
+    private Button btnChangeName;
+
+
+
     private String characterName;
     private Game game; // Initialize this with your game logic
 
     public void initGame() {
-        TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Character Name");
-        dialog.setHeaderText(null);
-        dialog.setContentText("Enter your character's name:");
-        dialog.showAndWait().ifPresent(name -> {
-            characterName = name;
-            game = new Game(characterName); // Initialize the game with the character name
-            updateLocationDescription();
-        });
+        boolean nameEntered = false;
+        while (!nameEntered) {
+            try {
+                updateName();
+                if (characterName != null || characterName != "") {
+                    nameEntered = true;
+                }
+            } catch(Exception e) {
+                TextInputDialog dialog = new TextInputDialog();
+                dialog.setTitle("Unknown Error");
+                dialog.setHeaderText(null);
+                dialog.setContentText("An unexpected error has occured, please try again. ");
+            }
+        }
 
         // Set up button handlers
+        btnChangeName.setOnAction(event -> updateName());
         //northButton.setOnAction(event -> move("North"));
-       // southButton.setOnAction(event -> move("South"));
+        //southButton.setOnAction(event -> move("South"));
         //eastButton.setOnAction(event -> move("East"));
         //westButton.setOnAction(event -> move("West"));
     }
@@ -59,5 +76,19 @@ public class GameController {
     private void move(String direction) {
         game.movePlayer(direction);
         updateLocationDescription();
+    }
+
+    private void updateName() {
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle("Character Name");
+        dialog.setHeaderText(null);
+        dialog.setContentText("Enter your character's name:");
+        dialog.showAndWait().ifPresent(name -> {
+            characterName = name;
+            System.out.println(characterName);
+            game = new Game(characterName); // Initialize the game with the character name
+            updateLocationDescription();
+            lblusername.setText(characterName);
+        });
     }
 }

@@ -1,3 +1,3 @@
-Dungeon Escape Patch Notes, V0.1.1b
+Dungeon Escape Patch Notes, V0.2b
 
 -Scene edits 

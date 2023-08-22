@@ -16,11 +16,14 @@
       </ImageView>
       <Label fx:id="lblTitleText" layoutX="173.0" layoutY="14.0" prefHeight="67.0" prefWidth="271.0" text="Dungeon Escape" textFill="#d3cece">
          <font>
-            <Font size="36.0" />
+            <Font name="Bodoni MT" size="36.0" />
          </font>
       </Label>
       <Button fx:id="btnStartGame" layoutX="258.0" layoutY="113.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="84.0" style="-fx-background-color: #28400a;" text="Start Game" textFill="WHITE" />
       <Button fx:id="btnHowToPlay" layoutX="258.0" layoutY="200.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="84.0" style="-fx-background-color: #28400a;" text="How to Play" textFill="WHITE" />
       <Button fx:id="btnAbout" layoutX="258.0" layoutY="284.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="84.0" style="-fx-background-color: #28400a;" text="About" textFill="WHITE" />
+      <Label fx:id="lblyourname" layoutX="22.0" layoutY="345.0" prefHeight="43.0" prefWidth="64.0" text="Your name: " textFill="#e1dfdf" />
+      <Label fx:id="lblusername" layoutX="86.0" layoutY="358.0" textFill="#e4e2e2" />
+      <Button fx:id="btnChangeName" layoutX="461.0" layoutY="337.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="106.0" style="-fx-background-color: #28400a;" text="Change Name" textFill="WHITE" />
    </children>
 </AnchorPane>

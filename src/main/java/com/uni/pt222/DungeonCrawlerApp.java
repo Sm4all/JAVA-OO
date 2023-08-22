@@ -12,15 +12,18 @@ public class DungeonCrawlerApp extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Home_screen.fxml"));
         AnchorPane root = loader.load();
         Scene scene = new Scene(root);
+
         primaryStage.setScene(scene);
         primaryStage.setTitle("Dungeon Crawler com.example.pt2.Game");
         primaryStage.show();
 
         GameController controller = loader.getController();
+        //HowToPlayController htp = loader.getController();
         controller.initGame(); // Initialize the game in the controller
     }
 
     public static void main(String[] args) {
         launch(args);
+
     }
 }
