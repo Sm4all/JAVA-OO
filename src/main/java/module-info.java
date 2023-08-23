@@ -9,6 +9,7 @@ module com.uni.pt222 {
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
 
-    opens com.uni.pt222 to javafx.fxml;
-    exports com.uni.pt222;
+    opens com.uni.pt222.application to javafx.fxml;
+    exports com.uni.pt222.application;
+    exports com.uni.pt222.Backend;
 }

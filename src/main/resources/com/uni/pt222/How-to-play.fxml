@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uni.pt222.HowToPlayController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uni.pt222.application.HowToPlayController">
    <children>
       <ImageView fx:id="imgBackground" fitHeight="400.0" fitWidth="600.0">
          <image>
-            <Image url="@../../../../Images/Homepage_background.jpg" />
+            <Image url="@Homepage_background.jpg" />
          </image>
       </ImageView>
       <Button fx:id="btnBack" layoutX="24.0" layoutY="348.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="74.0" style="-fx-background-color: #28400a;" text="Back" textFill="#e4dada" />
@@ -21,7 +20,7 @@
             <Font name="Bodoni MT" size="36.0" />
          </font>
       </Label>
-      <Label fx:id="lblHowToPlay" layoutX="42.0" layoutY="131.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus felis non porta molestie. Aliquam erat volutpat. Donec nec enim mi. Etiam feugiat viverra urna eu elementum. Sed sagittis mollis elementum. Cras et ipsum non felis hendrerit volutpat ut eget augue. Curabitur libero justo, vulputate nec euismod at, semper nec enim. Morbi non nibh consectetur, varius odio in, pulvinar tellus. Nam pharetra erat nibh, in posuere ipsum pellentesque sed. Maecenas felis arcu, rhoncus quis ornare eu, luctus ac metus. Sed dignissim sapien erat, eu consectetur leo malesuada id." textFill="#d3cece" wrapText="true">
+      <Label fx:id="lblHowToPlay" layoutX="24.0" layoutY="90.0" prefHeight="241.0" prefWidth="564.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus felis non porta molestie. Aliquam erat volutpat. Donec nec enim mi. Etiam feugiat viverra urna eu elementum. Sed sagittis mollis elementum. Cras et ipsum non felis hendrerit volutpat ut eget augue. Curabitur libero justo, vulputate nec euismod at, semper nec enim. Morbi non nibh consectetur, varius odio in, pulvinar tellus. Nam pharetra erat nibh, in posuere ipsum pellentesque sed. Maecenas felis arcu, rhoncus quis ornare eu, luctus ac metus. Sed dignissim sapien erat, eu consectetur leo malesuada id." textAlignment="CENTER" textFill="#d3cece" wrapText="true">
          <font>
             <Font name="Bodoni MT" size="18.0" />
          </font>

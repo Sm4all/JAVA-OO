@@ -1,0 +1,12 @@
+-src
+    -main
+       -java
+            -com
+                -uni
+                    -pt222
+                        -Application.java
+        -resources
+            -com
+                -uni
+                    -pt222
+                        -Home_Screen.fxml

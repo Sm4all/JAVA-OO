@@ -1,3 +1,4 @@
-Dungeon Escape Patch Notes, V0.2b
+Dungeon Escape Patch Notes, V0.3b
 
--Scene edits 
+-Complete Code Restructure
+-Now links between pages
