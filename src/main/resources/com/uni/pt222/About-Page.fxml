@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uni.pt222.application.AboutPageController">
+   <children>
+      <ImageView fitHeight="409.0" fitWidth="606.0" layoutX="-2.0" layoutY="-4.0">
+         <image>
+            <Image url="file:/C:/Users/Admin/Desktop/40633990-JAVA-OO-PT2/src/main/resources/com/uni/pt222/Homepage_background.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTitle" layoutX="256.0" layoutY="41.0" text="About" textFill="#e1d6d6">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="28.0" layoutY="335.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="106.0" style="-fx-background-color: #28400a;" text="Back" textFill="WHITE" />
+      <Label fx:id="lblHowToPlay" layoutX="19.0" layoutY="80.0" prefHeight="241.0" prefWidth="564.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus felis non porta molestie. Aliquam erat volutpat. Donec nec enim mi. Etiam feugiat viverra urna eu elementum. Sed sagittis mollis elementum. Cras et ipsum non felis hendrerit volutpat ut eget augue. Curabitur libero justo, vulputate nec euismod at, semper nec enim. Morbi non nibh consectetur, varius odio in, pulvinar tellus. Nam pharetra erat nibh, in posuere ipsum pellentesque sed. Maecenas felis arcu, rhoncus quis ornare eu, luctus ac metus. Sed dignissim sapien erat, eu consectetur leo malesuada id." textAlignment="CENTER" textFill="#d3cece" wrapText="true">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

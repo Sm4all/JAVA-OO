@@ -46,6 +46,9 @@ public class Game {
         }
     }
 
+    public void initialize() {
+        //updateName();
+    }
 
     public boolean isGameOver() {
         return gameOver;
@@ -56,7 +59,7 @@ public class Game {
         // Also, set gameOver to true if win/lose condition is met
     }
 
-/*
+    /*
     private void updateName() {
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Character Name");
@@ -72,5 +75,7 @@ public class Game {
         });
     }
 
- */
+     */
+
+
 }

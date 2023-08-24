@@ -1,4 +1,4 @@
-package com.uni.pt222.backend;
+package com.uni.pt222.Backend;
 
 import java.util.Random;
 

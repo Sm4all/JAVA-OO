@@ -3,6 +3,7 @@ package com.uni.pt222.application;
 import com.uni.pt222.Backend.GameFacade;
 import com.uni.pt222.application.HomePageController;
 import com.uni.pt222.application.HowToPlayController;
+import com.uni.pt222.application.AboutPageController;
 import com.uni.pt222.Backend.Game;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -31,16 +32,29 @@ public class DungeonCrawlerApp extends Application {
             AnchorPane rootHowToPlay = loaderHowToPlay.load();
             Scene sceneHowToPlay = new Scene(rootHowToPlay);
 
+            //About scene
+            FXMLLoader loaderAbout = new FXMLLoader(getClass().getResource("/com/uni/pt222/About-Page.fxml"));
+            AnchorPane rootAbout = loaderAbout.load();
+            Scene sceneAbout = new Scene(rootAbout);
+
             HomePageController homeController = loaderHome.getController();
             HowToPlayController htp = loaderHowToPlay.getController();
+            AboutPageController apc = loaderAbout.getController();
+            System.out.println(htp);
 
             homeController.setFacade(facade);
             homeController.setHowToPlayController(htp);
+            homeController.setAboutPageController(apc);
             homeController.setSecondScene(sceneHowToPlay);
+            homeController.setThirdScene(sceneAbout);
 
             htp.setFacade(facade);
             htp.setHomePageController(homeController);
             htp.setFirstScene(sceneHome);
+
+            apc.setFacade(facade);
+            apc.setHomePageController(homeController);
+            apc.setFirstScene(sceneHome);
 
             primaryStage.setScene(sceneHome);
             primaryStage.setTitle("Dungeon Crawler com.example.pt2.Game");
@@ -59,7 +73,7 @@ public class DungeonCrawlerApp extends Application {
         launch(args);
 
     }
-
+    /*
     private void updateName() {
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Character Name");
@@ -74,4 +88,5 @@ public class DungeonCrawlerApp extends Application {
             updateUsernameLabel();
         });
     }
+     */
 }
